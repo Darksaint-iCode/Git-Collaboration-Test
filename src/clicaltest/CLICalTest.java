@@ -52,6 +52,10 @@ public class CLICalTest {
                 break;
             case 2: perSubtraction();
                 break;
+            case 3: MultiplyMethod();
+                 break;
+             case 4: DivideMethod();
+                 break;
             case 5: perModulous();
                 break;
             default: System.out.println("Invalid Input :(");
@@ -92,6 +96,40 @@ public class CLICalTest {
 
     private static void perModulous() {
         c = a % b;
+        System.out.println("\nYour answer is: " + c + "\n");
+        System.out.println("Do you wanna perform another Operation?");
+        System.out.print("Input 1 for Yes and 2 for No: ");
+        
+        int perTrans = perOp.nextInt();
+        
+        if(perTrans == 1){
+            System.out.println("");
+            Start();
+        }else{
+            System.exit(0);
+        }
+    }
+    
+    //Multiply method
+    private static void MultiplyMethod(){
+        c = a * b;
+        System.out.println("\nYour answer is: " + c + "\n");
+        System.out.println("Do you wanna perform another Operation?");
+        System.out.print("Input 1 for Yes and 2 for No: ");
+        
+        int perTrans = perOp.nextInt();
+        
+        if(perTrans == 1){
+            System.out.println("");
+            Start();
+        }else{
+            System.exit(0);
+        }
+    }
+    
+    //Multiply method
+    private static void DivideMethod(){
+        c = a / b;
         System.out.println("\nYour answer is: " + c + "\n");
         System.out.println("Do you wanna perform another Operation?");
         System.out.print("Input 1 for Yes and 2 for No: ");
