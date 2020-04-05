@@ -24,6 +24,7 @@ public class CLICalTest {
         Start();
     }
     
+//    To accept two numbers and ask the user what operation he wanna performs.  
     private static void Start(){
         Scanner inputObja = new Scanner(System.in);
         
@@ -59,9 +60,11 @@ public class CLICalTest {
             case 5: perModulous();
                 break;
             default: System.out.println("Invalid Input :(");
-        } 
+        }
+        inputObja.close();
     }
-
+    
+    //Addition Method
     private static void perAddition() {
         c = a + b;
         System.out.println("\nYour answer is: " + c + "\n");
@@ -76,8 +79,10 @@ public class CLICalTest {
         }else{
             System.exit(0);
         }
+        perOp.close();
     }
 
+    //Subtraction Method
     private static void perSubtraction() {
         c = a - b;
         System.out.println("\nYour answer is: " + c + "\n");
@@ -92,8 +97,10 @@ public class CLICalTest {
         }else{
             System.exit(0);
         }
+        perOp.close();
     }
 
+    //Modulous Method
     private static void perModulous() {
         c = a % b;
         System.out.println("\nYour answer is: " + c + "\n");
@@ -108,6 +115,7 @@ public class CLICalTest {
         }else{
             System.exit(0);
         }
+        perOp.close();
     }
     
     //Multiply method
@@ -125,6 +133,7 @@ public class CLICalTest {
         }else{
             System.exit(0);
         }
+        perOp.close();
     }
     
     //Multiply method
@@ -142,5 +151,6 @@ public class CLICalTest {
         }else{
             System.exit(0);
         }
+        perOp.close();
     }
 }
